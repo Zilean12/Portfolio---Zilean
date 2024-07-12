@@ -407,6 +407,7 @@ h3{
 }
 
 
+
 /* ----- PROJECTS BOX ----- */
 .project-container {
     display: flex;
@@ -434,7 +435,7 @@ h3{
     font-size: 48px;
     color: #4CAF50;
     display: block;
-    margin-bottom: 20px;
+    margin: 20px 0; /* Adds space above and below the icon */
     text-align: center;
 }
 
@@ -501,6 +502,7 @@ h3{
 .project-box:hover .project-details {
     background-color: #f9f9f9;
 }
+
 
 /* -------SKILL BOX---------- */
 .skill-container {
@@ -613,6 +615,7 @@ h3{
     padding: 20px 40px;
     position: relative;
     width: 50%;
+    box-sizing: border-box;
 }
 
 .timeline-item:nth-child(odd) {
@@ -644,18 +647,18 @@ h3{
 .timeline-content {
     padding: 20px 30px;
     background: #fff;
-    border-radius: 6px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .timeline-content:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
-.timeline-content h2 {
+.timeline-content h3 {
     font-size: 1.8em;
     color: #4CAF50;
     margin-bottom: 12px;
@@ -677,6 +680,43 @@ h3{
     border-radius: 20px;
     font-size: 1em;
     font-weight: bold;
+}
+
+.experience-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 15px;
+    color: #555;
+}
+
+.experience-details li {
+    margin-bottom: 10px;
+}
+
+/* Enhanced styling for better look */
+.timeline-content {
+    border-left: 5px solid #4CAF50;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    border-left: none;
+    border-right: 5px solid #4CAF50;
+}
+
+.timeline-item:nth-child(even):before {
+    left: -9px;
+    right: auto;
+}
+
+.timeline-content:hover {
+    transform: scale(1.02);
+}
+
+.timeline-content h3,
+.timeline-content p {
+    text-align: center;
 }
 
  /* ---------Experience Box---------- */
@@ -705,6 +745,45 @@ h3{
     display: inline-block;
     width: 1em;
     font-size: 1.5em;
+}
+/* ----- EXTRA CURRICULAR ACTIVITIES ----- */
+.activity-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.activity-box {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 8px 10px 2px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    width: 80%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.activity-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.activity-box h3 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.activity-box p {
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Row Styling */
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* ----- CONTACT BOX ----- */
