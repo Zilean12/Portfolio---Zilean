@@ -147,3 +147,23 @@ function sendEmail() {
           console.error('FAILED...', error);
       });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.getElementById('menu-toggle');
+  const myNavMenu = document.getElementById('myNavMenu');
+
+  menuToggle.addEventListener('click', () => {
+      myNavMenu.classList.toggle('active');
+  });
+
+  const handleScroll = () => {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) {
+          header.classList.add('scroll-header');
+      } else {
+          header.classList.remove('scroll-header');
+      }
+  };
+
+  window.addEventListener('scroll', handleScroll);
+});
