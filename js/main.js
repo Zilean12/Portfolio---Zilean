@@ -28,15 +28,15 @@ document.getElementById('download-cv-btn-2').addEventListener('click', downloadC
 
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop >  50) {
 
-      navHeader.style.boxShadow = "0 1px 6px rgba(0, 0, 0, 0.1)";
+      navHeader.style.boxShadow = "0 4px 25px var(--shadow-medium)";
       navHeader.style.height = "70px";
       navHeader.style.lineHeight = "70px";
 
     } else {
 
-      navHeader.style.boxShadow = "none";
-      navHeader.style.height = "90px";
-      navHeader.style.lineHeight = "90px";
+      navHeader.style.boxShadow = "0 2px 20px var(--shadow-light)";
+      navHeader.style.height = "80px";
+      navHeader.style.lineHeight = "80px";
 
     }
   }
